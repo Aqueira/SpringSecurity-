@@ -60,13 +60,13 @@ public class JWTService {
         return username.equals(extractUsername(token)) && !isExpired(token);
     }
 
+    public String extractUsername(String token) {
+        return extractClaim(token, Claims::getSubject);
+    }
+
 
     private Boolean isExpired(String token) {
         return extractExpiration(token).before(new Date());
-    }
-
-    public String extractUsername(String token) {
-        return extractClaim(token, Claims::getSubject);
     }
 
     private Date extractExpiration(String token) {

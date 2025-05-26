@@ -34,25 +34,29 @@ public class AuthorizationService {
 	private Set<Long> idCachedRoles;
 
 	@EventListener(ApplicationReadyEvent.class)
-	@Transactional
+	@Transactional(readOnly = true)
 	public void init() {
 		Set<Long> idDefaultRoles = roleRepository.findIdsByDefaultRoleTrue();
 		if(idDefaultRoles.isEmpty()) {
 			throw new NotFoundException("No default roles found!");
 		};
 		idCachedRoles = idDefaultRoles;
-	}
+	} // я далбоеб просто решил протестить как будет работать,
+	// запрос теперь один в бд на получение ролей, в памяти данные на пожизненно,
+	// и доп запросов  в бд при регистрации на поиск ролей не будет.
+	// Хз вроде норм, но тут явно нахуй не надо потому что похуй на RPS в тыщу условный
+
 
 	@Transactional
 	public void register(User user) {
 		userRepository.save(
-				User.builder()
-						.username(user.getUsername())
-						.password(passwordEncoder.encode(user.getPassword()))
-						.roles(idCachedRoles.stream()
-								.map(roleId -> entityManager.getReference(Role.class, roleId))
-								.collect(Collectors.toSet()))
-						.build()
+				new User(null,
+						user.getUsername(),
+						passwordEncoder.encode(user.getPassword()),
+						idCachedRoles.stream()
+								.map(role_id -> entityManager.getReference(Role.class, role_id)) // делаю прокси для связи между таблицами
+								.collect(Collectors.toSet())
+				)
 		);
 	}
 

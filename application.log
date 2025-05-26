@@ -1783,3 +1783,445 @@ com.spring.security.exception.exceptions.NotFoundException: No default roles fou
 2025-05-26T12:52:59.196+02:00 DEBUG 24420 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
 2025-05-26T12:52:59.197+02:00 DEBUG 24420 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
 2025-05-26T12:52:59.198+02:00 DEBUG 24420 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-26T12:54:46.671+02:00  INFO 24420 --- [springsecurity] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-26T12:54:46.677+02:00  INFO 24420 --- [springsecurity] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-26T12:54:46.680+02:00  INFO 24420 --- [springsecurity] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-26T12:54:46.682+02:00  INFO 24420 --- [springsecurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown initiated...
+2025-05-26T12:54:46.683+02:00  INFO 24420 --- [springsecurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown completed.
+2025-05-26T12:58:14.112+02:00  INFO 18740 --- [springsecurity] [main] c.s.security.SpringSecurityApplication   : Starting SpringSecurityApplication using Java 23.0.2 with PID 18740 (C:\Users\Aqura\IdeaProjects\SpringSecurity-\target\classes started by Aqura in C:\Users\Aqura\IdeaProjects\SpringSecurity-)
+2025-05-26T12:58:14.114+02:00  INFO 18740 --- [springsecurity] [main] c.s.security.SpringSecurityApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-26T12:58:14.706+02:00  INFO 18740 --- [springsecurity] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-26T12:58:14.762+02:00  INFO 18740 --- [springsecurity] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2025-05-26T12:58:14.920+02:00  INFO 18740 --- [springsecurity] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6e3c1655-2e71-3da6-a4df-d053659b2bdc
+2025-05-26T12:58:15.256+02:00  INFO 18740 --- [springsecurity] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-26T12:58:15.268+02:00  INFO 18740 --- [springsecurity] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-26T12:58:15.268+02:00  INFO 18740 --- [springsecurity] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-26T12:58:15.318+02:00  INFO 18740 --- [springsecurity] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-26T12:58:15.318+02:00  INFO 18740 --- [springsecurity] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1161 ms
+2025-05-26T12:58:15.440+02:00  INFO 18740 --- [springsecurity] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-26T12:58:15.497+02:00  INFO 18740 --- [springsecurity] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.0.0.Final
+2025-05-26T12:58:15.943+02:00  INFO 18740 --- [springsecurity] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-26T12:58:15.981+02:00  INFO 18740 --- [springsecurity] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Starting...
+2025-05-26T12:58:16.095+02:00  INFO 18740 --- [springsecurity] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool - Added connection org.postgresql.jdbc.PgConnection@6fa2a006
+2025-05-26T12:58:16.096+02:00  INFO 18740 --- [springsecurity] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Start completed.
+2025-05-26T12:58:16.125+02:00  WARN 18740 --- [springsecurity] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-26T12:58:16.147+02:00  INFO 18740 --- [springsecurity] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5433/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-26T12:58:17.001+02:00  INFO 18740 --- [springsecurity] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-26T12:58:17.156+02:00  INFO 18740 --- [springsecurity] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-26T12:58:17.490+02:00  INFO 18740 --- [springsecurity] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-26T12:58:17.961+02:00  INFO 18740 --- [springsecurity] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-26T12:58:17.961+02:00  WARN 18740 --- [springsecurity] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-26T12:58:18.029+02:00  WARN 18740 --- [springsecurity] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-26T12:58:18.154+02:00 DEBUG 18740 --- [springsecurity] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2025-05-26T12:58:18.254+02:00 DEBUG 18740 --- [springsecurity] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-05-26T12:58:18.381+02:00 DEBUG 18740 --- [springsecurity] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-26T12:58:18.423+02:00 DEBUG 18740 --- [springsecurity] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-26T12:58:18.620+02:00  INFO 18740 --- [springsecurity] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-26T12:58:18.633+02:00  INFO 18740 --- [springsecurity] [main] o.s.s.config.TaskSchedulerRouter         : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2025-05-26T12:58:18.637+02:00  INFO 18740 --- [springsecurity] [main] c.s.security.SpringSecurityApplication   : Started SpringSecurityApplication in 4.992 seconds (process running for 5.767)
+2025-05-26T12:58:18.686+02:00 DEBUG 18740 --- [springsecurity] [main] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id 
+    from
+        roles r1_0 
+    where
+        r1_0.default_role=true
+2025-05-26T12:58:37.462+02:00  INFO 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-26T12:58:37.463+02:00  INFO 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-26T12:58:37.463+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-05-26T12:58:37.463+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-05-26T12:58:37.463+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-05-26T12:58:37.464+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2fc72df3
+2025-05-26T12:58:37.464+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@794c22cd
+2025-05-26T12:58:37.465+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-26T12:58:37.465+02:00  INFO 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-26T12:58:37.483+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/auth/authenticate", parameters={}
+2025-05-26T12:58:37.484+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.spring.security.auth.controller.AuthorizationController#authorization(User)
+2025-05-26T12:58:37.565+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.spring.security.user.entity.User@73710347]
+2025-05-26T12:58:37.670+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.password,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-05-26T12:58:37.697+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        r1_0.user_id,
+        r1_1.role_id,
+        r1_1.default_role,
+        r1_1.name 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.role_id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-26T12:58:37.779+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.password,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-05-26T12:58:37.836+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-26T12:58:37.837+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6W3siaWQiOjIsIm5hbWUiOiJST0xFX1VTRVIiLCJkZWZhdWx0Um9sZSI6dHJ1ZX1dLCJ (truncated)..."]
+2025-05-26T12:58:37.841+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-26T12:58:41.686+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/auth/authenticate", parameters={}
+2025-05-26T12:58:41.686+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.spring.security.auth.controller.AuthorizationController#authorization(User)
+2025-05-26T12:58:41.687+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.spring.security.user.entity.User@1f282958]
+2025-05-26T12:58:41.690+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.password,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-05-26T12:58:41.769+02:00 DEBUG 18740 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+2025-05-26T13:17:37.092+02:00  INFO 18740 --- [springsecurity] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-26T13:17:37.100+02:00  INFO 18740 --- [springsecurity] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-26T13:17:37.104+02:00  INFO 18740 --- [springsecurity] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-26T13:17:37.106+02:00  INFO 18740 --- [springsecurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown initiated...
+2025-05-26T13:17:37.107+02:00  INFO 18740 --- [springsecurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown completed.
+2025-05-26T13:17:42.960+02:00  INFO 22572 --- [springsecurity] [main] c.s.security.SpringSecurityApplication   : Starting SpringSecurityApplication using Java 23.0.2 with PID 22572 (C:\Users\Aqura\IdeaProjects\SpringSecurity-\target\classes started by Aqura in C:\Users\Aqura\IdeaProjects\SpringSecurity-)
+2025-05-26T13:17:42.962+02:00  INFO 22572 --- [springsecurity] [main] c.s.security.SpringSecurityApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-26T13:17:43.590+02:00  INFO 22572 --- [springsecurity] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-26T13:17:43.647+02:00  INFO 22572 --- [springsecurity] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2025-05-26T13:17:43.803+02:00  INFO 22572 --- [springsecurity] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6e3c1655-2e71-3da6-a4df-d053659b2bdc
+2025-05-26T13:17:44.126+02:00  INFO 22572 --- [springsecurity] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-26T13:17:44.138+02:00  INFO 22572 --- [springsecurity] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-26T13:17:44.138+02:00  INFO 22572 --- [springsecurity] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-26T13:17:44.190+02:00  INFO 22572 --- [springsecurity] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-26T13:17:44.190+02:00  INFO 22572 --- [springsecurity] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1179 ms
+2025-05-26T13:17:44.312+02:00  INFO 22572 --- [springsecurity] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-26T13:17:44.370+02:00  INFO 22572 --- [springsecurity] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.0.0.Final
+2025-05-26T13:17:44.809+02:00  INFO 22572 --- [springsecurity] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-26T13:17:44.839+02:00  INFO 22572 --- [springsecurity] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Starting...
+2025-05-26T13:17:44.954+02:00  INFO 22572 --- [springsecurity] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool - Added connection org.postgresql.jdbc.PgConnection@248b2b61
+2025-05-26T13:17:44.955+02:00  INFO 22572 --- [springsecurity] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Start completed.
+2025-05-26T13:17:44.982+02:00  WARN 22572 --- [springsecurity] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-26T13:17:45.011+02:00  INFO 22572 --- [springsecurity] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5433/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-26T13:17:45.808+02:00  INFO 22572 --- [springsecurity] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-26T13:17:45.945+02:00  INFO 22572 --- [springsecurity] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-26T13:17:46.285+02:00  INFO 22572 --- [springsecurity] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-26T13:17:46.752+02:00  INFO 22572 --- [springsecurity] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-26T13:17:46.753+02:00  WARN 22572 --- [springsecurity] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-26T13:17:46.817+02:00  WARN 22572 --- [springsecurity] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-26T13:17:46.938+02:00 DEBUG 22572 --- [springsecurity] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2025-05-26T13:17:47.030+02:00 DEBUG 22572 --- [springsecurity] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-05-26T13:17:47.156+02:00 DEBUG 22572 --- [springsecurity] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-26T13:17:47.198+02:00 DEBUG 22572 --- [springsecurity] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-26T13:17:47.399+02:00  INFO 22572 --- [springsecurity] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-26T13:17:47.412+02:00  INFO 22572 --- [springsecurity] [main] o.s.s.config.TaskSchedulerRouter         : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2025-05-26T13:17:47.416+02:00  INFO 22572 --- [springsecurity] [main] c.s.security.SpringSecurityApplication   : Started SpringSecurityApplication in 4.875 seconds (process running for 5.546)
+2025-05-26T13:17:47.464+02:00 DEBUG 22572 --- [springsecurity] [main] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id 
+    from
+        roles r1_0 
+    where
+        r1_0.default_role=true
+2025-05-26T13:18:47.622+02:00  INFO 22572 --- [springsecurity] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-26T13:18:47.629+02:00  INFO 22572 --- [springsecurity] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-26T13:18:47.633+02:00  INFO 22572 --- [springsecurity] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-26T13:18:47.635+02:00  INFO 22572 --- [springsecurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown initiated...
+2025-05-26T13:18:47.638+02:00  INFO 22572 --- [springsecurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown completed.
+2025-05-26T13:21:41.544+02:00  INFO 3504 --- [springsecurity] [main] c.s.security.SpringSecurityApplication   : Starting SpringSecurityApplication using Java 23.0.2 with PID 3504 (C:\Users\Aqura\IdeaProjects\SpringSecurity-\target\classes started by Aqura in C:\Users\Aqura\IdeaProjects\SpringSecurity-)
+2025-05-26T13:21:41.546+02:00  INFO 3504 --- [springsecurity] [main] c.s.security.SpringSecurityApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-26T13:21:42.170+02:00  INFO 3504 --- [springsecurity] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-26T13:21:42.224+02:00  INFO 3504 --- [springsecurity] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2025-05-26T13:21:42.381+02:00  INFO 3504 --- [springsecurity] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6e3c1655-2e71-3da6-a4df-d053659b2bdc
+2025-05-26T13:21:42.702+02:00  INFO 3504 --- [springsecurity] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-26T13:21:42.714+02:00  INFO 3504 --- [springsecurity] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-26T13:21:42.714+02:00  INFO 3504 --- [springsecurity] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-26T13:21:42.765+02:00  INFO 3504 --- [springsecurity] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-26T13:21:42.765+02:00  INFO 3504 --- [springsecurity] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1173 ms
+2025-05-26T13:21:42.894+02:00  INFO 3504 --- [springsecurity] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-26T13:21:42.943+02:00  INFO 3504 --- [springsecurity] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.0.0.Final
+2025-05-26T13:21:43.386+02:00  INFO 3504 --- [springsecurity] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-26T13:21:43.419+02:00  INFO 3504 --- [springsecurity] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Starting...
+2025-05-26T13:21:43.540+02:00  INFO 3504 --- [springsecurity] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool - Added connection org.postgresql.jdbc.PgConnection@57b711b6
+2025-05-26T13:21:43.541+02:00  INFO 3504 --- [springsecurity] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Start completed.
+2025-05-26T13:21:43.578+02:00  WARN 3504 --- [springsecurity] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-26T13:21:43.601+02:00  INFO 3504 --- [springsecurity] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5433/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-26T13:21:44.394+02:00  INFO 3504 --- [springsecurity] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-26T13:21:44.539+02:00  INFO 3504 --- [springsecurity] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-26T13:21:44.890+02:00  INFO 3504 --- [springsecurity] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-26T13:21:45.361+02:00  INFO 3504 --- [springsecurity] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-26T13:21:45.362+02:00  WARN 3504 --- [springsecurity] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-26T13:21:45.435+02:00  WARN 3504 --- [springsecurity] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-26T13:21:45.557+02:00 DEBUG 3504 --- [springsecurity] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2025-05-26T13:21:45.651+02:00 DEBUG 3504 --- [springsecurity] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-05-26T13:21:45.772+02:00 DEBUG 3504 --- [springsecurity] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-26T13:21:45.813+02:00 DEBUG 3504 --- [springsecurity] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-26T13:21:46.000+02:00  INFO 3504 --- [springsecurity] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-26T13:21:46.013+02:00  INFO 3504 --- [springsecurity] [main] o.s.s.config.TaskSchedulerRouter         : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2025-05-26T13:21:46.017+02:00  INFO 3504 --- [springsecurity] [main] c.s.security.SpringSecurityApplication   : Started SpringSecurityApplication in 4.886 seconds (process running for 5.574)
+2025-05-26T13:21:46.063+02:00 DEBUG 3504 --- [springsecurity] [main] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id 
+    from
+        roles r1_0 
+    where
+        r1_0.default_role=true
+2025-05-26T13:22:33.088+02:00  INFO 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-26T13:22:33.088+02:00  INFO 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-26T13:22:33.088+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-05-26T13:22:33.088+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-05-26T13:22:33.088+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-05-26T13:22:33.089+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2fc72df3
+2025-05-26T13:22:33.090+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@794c22cd
+2025-05-26T13:22:33.090+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-26T13:22:33.090+02:00  INFO 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-26T13:22:33.110+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/auth/authenticate", parameters={}
+2025-05-26T13:22:33.112+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.spring.security.auth.controller.AuthorizationController#authorization(User)
+2025-05-26T13:22:33.199+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.spring.security.user.entity.User@660d0540]
+2025-05-26T13:22:33.306+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.password,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-05-26T13:22:33.332+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        r1_0.user_id,
+        r1_1.role_id,
+        r1_1.default_role,
+        r1_1.name 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.role_id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-26T13:22:33.416+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.password,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-05-26T13:22:33.457+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-26T13:22:33.458+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6W3siaWQiOjIsIm5hbWUiOiJST0xFX1VTRVIiLCJkZWZhdWx0Um9sZSI6dHJ1ZX0seyJ (truncated)..."]
+2025-05-26T13:22:33.462+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-26T13:22:52.265+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.password,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-05-26T13:22:52.269+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        r1_0.user_id,
+        r1_1.role_id,
+        r1_1.default_role,
+        r1_1.name 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.role_id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-26T13:22:52.287+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : DELETE "/user?id=5", parameters={masked}
+2025-05-26T13:22:52.288+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.spring.security.user.controller.UserController#delete(Long)
+2025-05-26T13:22:52.358+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0 
+    where
+        u1_0.user_id=?
+2025-05-26T13:22:52.363+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.spring.security.exception.GlobalExceptionHandler#handleNotFoundException(NotFoundException)
+2025-05-26T13:22:52.373+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-26T13:22:52.375+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiError[status=404 NOT_FOUND, message=Resource not found!, details=User with this id does not exist (truncated)...]
+2025-05-26T13:22:52.379+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.spring.security.exception.exceptions.NotFoundException: User with this id does not exist!]
+2025-05-26T13:22:52.379+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-05-26T13:23:03.803+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.password,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-05-26T13:23:03.807+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        r1_0.user_id,
+        r1_1.role_id,
+        r1_1.default_role,
+        r1_1.name 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.role_id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-26T13:23:03.812+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : DELETE "/user?id=1", parameters={masked}
+2025-05-26T13:23:03.812+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.spring.security.user.controller.UserController#delete(Long)
+2025-05-26T13:23:03.814+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0 
+    where
+        u1_0.user_id=?
+2025-05-26T13:23:03.820+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.password,
+        r1_0.user_id,
+        r1_1.role_id,
+        r1_1.default_role,
+        r1_1.name,
+        u1_0.username 
+    from
+        users u1_0 
+    left join
+        user_roles r1_0 
+            on u1_0.user_id=r1_0.user_id 
+    left join
+        roles r1_1 
+            on r1_1.role_id=r1_0.role_id 
+    where
+        u1_0.user_id=?
+2025-05-26T13:23:03.842+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-4] org.hibernate.SQL                        : 
+    delete 
+    from
+        user_roles 
+    where
+        user_id=?
+2025-05-26T13:23:03.851+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-4] org.hibernate.SQL                        : 
+    delete 
+    from
+        users 
+    where
+        user_id=?
+2025-05-26T13:23:03.857+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-26T13:23:03.857+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2025-05-26T13:23:03.857+02:00 DEBUG 3504 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-26T13:23:18.391+02:00  INFO 3504 --- [springsecurity] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-26T13:23:18.399+02:00  INFO 3504 --- [springsecurity] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-26T13:23:18.403+02:00  INFO 3504 --- [springsecurity] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-26T13:23:18.404+02:00  INFO 3504 --- [springsecurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown initiated...
+2025-05-26T13:23:18.406+02:00  INFO 3504 --- [springsecurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown completed.
+2025-05-26T13:28:20.461+02:00  INFO 23644 --- [springsecurity] [main] c.s.security.SpringSecurityApplication   : Starting SpringSecurityApplication using Java 23.0.2 with PID 23644 (C:\Users\Aqura\IdeaProjects\SpringSecurity-\target\classes started by Aqura in C:\Users\Aqura\IdeaProjects\SpringSecurity-)
+2025-05-26T13:28:20.463+02:00  INFO 23644 --- [springsecurity] [main] c.s.security.SpringSecurityApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-26T13:28:21.084+02:00  INFO 23644 --- [springsecurity] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-26T13:28:21.141+02:00  INFO 23644 --- [springsecurity] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2025-05-26T13:28:21.298+02:00  INFO 23644 --- [springsecurity] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6e3c1655-2e71-3da6-a4df-d053659b2bdc
+2025-05-26T13:28:21.617+02:00  INFO 23644 --- [springsecurity] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-26T13:28:21.629+02:00  INFO 23644 --- [springsecurity] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-26T13:28:21.629+02:00  INFO 23644 --- [springsecurity] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-26T13:28:21.681+02:00  INFO 23644 --- [springsecurity] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-26T13:28:21.681+02:00  INFO 23644 --- [springsecurity] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1170 ms
+2025-05-26T13:28:21.812+02:00  INFO 23644 --- [springsecurity] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-26T13:28:21.862+02:00  INFO 23644 --- [springsecurity] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.0.0.Final
+2025-05-26T13:28:22.349+02:00  INFO 23644 --- [springsecurity] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-26T13:28:22.381+02:00  INFO 23644 --- [springsecurity] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Starting...
+2025-05-26T13:28:22.498+02:00  INFO 23644 --- [springsecurity] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool - Added connection org.postgresql.jdbc.PgConnection@4b61e97
+2025-05-26T13:28:22.499+02:00  INFO 23644 --- [springsecurity] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Start completed.
+2025-05-26T13:28:22.532+02:00  WARN 23644 --- [springsecurity] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-26T13:28:22.552+02:00  INFO 23644 --- [springsecurity] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5433/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-26T13:28:23.362+02:00  INFO 23644 --- [springsecurity] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-26T13:28:23.512+02:00  INFO 23644 --- [springsecurity] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-26T13:28:23.872+02:00  INFO 23644 --- [springsecurity] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-26T13:28:24.354+02:00  INFO 23644 --- [springsecurity] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-26T13:28:24.355+02:00  WARN 23644 --- [springsecurity] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-26T13:28:24.432+02:00  WARN 23644 --- [springsecurity] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-26T13:28:24.557+02:00 DEBUG 23644 --- [springsecurity] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2025-05-26T13:28:24.645+02:00 DEBUG 23644 --- [springsecurity] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-05-26T13:28:24.766+02:00 DEBUG 23644 --- [springsecurity] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-26T13:28:24.808+02:00 DEBUG 23644 --- [springsecurity] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-26T13:28:24.997+02:00  INFO 23644 --- [springsecurity] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-26T13:28:25.011+02:00  INFO 23644 --- [springsecurity] [main] o.s.s.config.TaskSchedulerRouter         : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2025-05-26T13:28:25.020+02:00  INFO 23644 --- [springsecurity] [main] c.s.security.SpringSecurityApplication   : Started SpringSecurityApplication in 5.047 seconds (process running for 5.736)
+2025-05-26T13:28:25.074+02:00 DEBUG 23644 --- [springsecurity] [main] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id 
+    from
+        roles r1_0 
+    where
+        r1_0.default_role=true
+2025-05-26T13:28:26.681+02:00  INFO 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-26T13:28:26.681+02:00  INFO 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-26T13:28:26.681+02:00 DEBUG 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-05-26T13:28:26.681+02:00 DEBUG 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-05-26T13:28:26.682+02:00 DEBUG 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-05-26T13:28:26.682+02:00 DEBUG 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2aee0173
+2025-05-26T13:28:26.683+02:00 DEBUG 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5bb0122
+2025-05-26T13:28:26.683+02:00 DEBUG 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-26T13:28:26.683+02:00  INFO 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-26T13:28:26.701+02:00 DEBUG 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/auth/registration", parameters={}
+2025-05-26T13:28:26.703+02:00 DEBUG 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.spring.security.auth.controller.AuthorizationController#registration(User)
+2025-05-26T13:28:26.777+02:00 DEBUG 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.spring.security.user.entity.User@62f9fe86]
+2025-05-26T13:28:26.894+02:00 DEBUG 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (password, username) 
+    values
+        (?, ?)
+2025-05-26T13:28:26.907+02:00  WARN 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 23505
+2025-05-26T13:28:26.907+02:00  WARN 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] org.hibernate.orm.jdbc.error             : ERROR: duplicate key value violates unique constraint "ukr43af9ap4edm43mmtq01oddj6"
+  Подробности: Key (username)=(testName3) already exists.
+2025-05-26T13:28:26.917+02:00 DEBUG 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.spring.security.exception.GlobalExceptionHandler#handleDataIntegrityViolationException(DataIntegrityViolationException)
+2025-05-26T13:28:26.940+02:00 DEBUG 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-26T13:28:26.942+02:00 DEBUG 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiError[status=409 CONFLICT, message=Duplicate entry!, details=could not execute statement [ERROR:  (truncated)...]
+2025-05-26T13:28:26.952+02:00 DEBUG 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [ERROR: duplicate key value violates unique constraint "ukr43af9ap4edm43mmtq01oddj6"<EOL>  Подробности: Key (username)=(testName3) already exists.] [insert into users (password,username) values (?,?)]; SQL [insert into users (password,username) values (?,?)]; constraint [ukr43af9ap4edm43mmtq01oddj6]]
+2025-05-26T13:28:26.953+02:00 DEBUG 23644 --- [springsecurity] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 409 CONFLICT
+2025-05-26T13:28:47.864+02:00  INFO 23644 --- [springsecurity] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-26T13:28:47.871+02:00  INFO 23644 --- [springsecurity] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-26T13:28:47.875+02:00  INFO 23644 --- [springsecurity] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-26T13:28:47.877+02:00  INFO 23644 --- [springsecurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown initiated...
+2025-05-26T13:28:47.879+02:00  INFO 23644 --- [springsecurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown completed.
