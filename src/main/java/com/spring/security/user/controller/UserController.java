@@ -1,5 +1,6 @@
 package com.spring.security.user.controller;
 
+import com.spring.security.exception.exceptions.NotFoundException;
 import com.spring.security.user.entity.User;
 import com.spring.security.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -22,7 +23,7 @@ public class UserController {
 	public ResponseEntity<?> update(@RequestBody User user) {
 		User existingUser = userRepository
 				.findById(user.getId())
-				.orElseThrow(RuntimeException::new);
+				.orElseThrow(() -> new NotFoundException("User with this id does not exist!"));
 		existingUser.setUsername(user.getUsername());
 		existingUser.setPassword(passwordEncoder.encode(user.getPassword()));
 		return ResponseEntity.ok(userRepository.save(existingUser));
@@ -32,6 +33,9 @@ public class UserController {
 	@Transactional
 	@PreAuthorize("hasRole('ROLE_USER') and #id == authentication.principal.id or hasRole('ADMIN')")
 	public void delete(@RequestParam Long id) {
+		if(!userRepository.existsById(id)) {
+			throw new NotFoundException("User with this id does not exist!");
+		}
 		userRepository.deleteById(id);
 	}
 }
