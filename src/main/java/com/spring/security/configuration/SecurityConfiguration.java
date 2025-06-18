@@ -83,6 +83,7 @@ public class SecurityConfiguration {
                     });
                     //прописываем кастомные ошибки на аутентификацию + форбиден, желательно вынести в отдельный класс. Тут просто показано что так можно делать
                 })
+                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) // Отключаем хранение сессий в Spring Security: каждый запрос аутентифицируется независимо (stateless).Это необходимо для REST API с JWT, чтобы не использовать HTTP-сессии и обеспечить масштабируемость.
                 .passwordManagement(AbstractHttpConfigurer::disable) // к сожалению мы опять используем JWT тут  - passwordManagement работает только с формой логина и сессиями.
                 .authenticationManager(authenticationManager(authenticationConfiguration)) // можно инициализировать его тут, можно забить хуй ведь спринг и так найдет бин прописанный ниже
                 .authenticationProvider(authenticationProvider()) // тоже самое можно тут дописать, можно хуй забить.
